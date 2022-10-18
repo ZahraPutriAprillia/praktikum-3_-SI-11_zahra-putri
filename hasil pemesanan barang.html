@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form pemesanan barang</title>
+  </head>
+  <style>
+    .navbar {
+      background-color: pink;
+      border-style: solid;
+      width: auto;
+    }
+
+    .ul-navbar {
+      display: flex;
+      list-style-type: none;
+      gap: 150px;
+    }
+
+    li {
+      padding: 1rem 1rem;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .gambar {
+      padding: 40px 5px 5px 5px;
+    }
+
+    img {
+      border-radius: 25px;
+    }
+
+    .form {
+      padding: 80px 10px 10px 100px;
+    }
+  </style>
+  <body style="background-color: papayawhip">
+    <div class="navbar">
+      <ul class="ul-navbar">
+        <li>
+          <a>Home| </a>
+        </li>
+        <li>
+          <a>Register| </a>
+        </li>
+        <li>
+          <a>Policy |</a>
+        </li>
+        <li>
+          <a>About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="gambar laptop">
+        <img
+          src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr"
+          width="250px"
+          height="250px"/>
+      </div>
+      <div class="form">
+        <table>
+          <tr>
+            <td><label for="title here">Title Here :</label></td>
+            <td>Laptop Lenovo</td>
+          </tr>
+          <br>
+          <tr>
+            <td><label for="description">Description 
+                :</label></td>
+            <td>
+                <br>Year:2021 <br>Model:  <br>Condition:New
+            </td>
+          </tr>
+            <td><label from="Total Amount">Total Amount :</label></td>
+            <td>Rp6.000.000,00</td>
+          <tr>
+            <td><label for="Pay To">Pay To :</label></td>
+            <td> 123456789</td>
+          </tr>
+          <tr>
+            <td><label for="Payment Type">Payment Type:</label></td>
+            <td>
+              <select name="Bank" id="id_Bank" size="1">
+                <option>BCA</option>
+                <option>BSI</option>
+                <option selected>BCA</option>
+                <option>JAGO</option>
+                <option>BTN</option>
+                <option>DKI</option>
+                <option>MANDIRI TASPEN</option>
+              </select>
+            </td>
+          </tr>
+
+        </tr>
+            <td><label for="account number">Account Number :</label></td>
+            <td>
+              <input
+                type="text"
+                name="account number"
+                value="123456789"/>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="account holder">Account Holder:</label></td>
+            <td>
+              <input
+                type="text"
+                required
+                name="account holder"
+                value="123456789"/>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="color: green">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="color: green">
+              <input type="checkbox" id="Send to mobile phone" checked="" />
+              <label for="">Send to mobile phone</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td style="color: green">
+              <input type="checkbox" id="Send to Email" checked="" />
+              <label for="">Send to Email</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Send to mobile phone">Send to mobile phone :</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="Send to mobile phone"
+                value="123456789"/>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Send to Email :</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                value="zahrap@gmail.com"/>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <a href="pembayaran.html"><input type="submit" value="Pay Using Quid Link" style="background-color: aqua;"/></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
